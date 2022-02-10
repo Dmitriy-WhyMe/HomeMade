@@ -1,0 +1,51 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+			section.swiper__container
+				.swiper
+					.swiper-wrapper
+						.swiper-slide
+							img(src=img+"slide.png", alt="")
+						.swiper-slide
+							img(src=img+"slide.png", alt="")
+						.swiper-slide
+							img(src=img+"slide.png", alt="")
+					.swiper-button-prev 
+						<svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.99382e-07 14L24 27.8564L24 0.143593L6.99382e-07 14Z" fill="#C90C0F"/></svg>
+					.swiper-button-next 
+						<svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 14L-1.30507e-06 27.8564L-9.36995e-08 0.143593L24 14Z" fill="#C90C0F"/></svg>		 
+			section.products(class="container")
+				h2 Products
+				.products__flex 
+					.products__item
+						img(src=img+"Mask Group.png", alt="")
+						h3 Chips with taste of cheese
+					.products__item
+						img(src=img+"Mask Group (1).png", alt="")
+						h3 Popcorn with berries
+					.products__item
+						img(src=img+"Mask Group (2).png", alt="")
+						h3 Chips with taste of chili pepper
+				a(href="product_chips.html") view all<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.8103 0L14.77 1.34461L19.1837 7.04926H0V8.95092H19.1835L14.77 14.6554L15.8103 16L22 8L15.8103 0Z" fill="#C90C0F"/></svg>
+			section.blog(class="container")
+				h2 blog
+				.blog__flex 
+					.blog__item 
+						img(src=img+"Mask Group (3).png", alt="")
+						.blog__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+					.blog__item 
+						img(src=img+"Mask Group (4).png", alt="")
+						.blog__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+					.blog__item 
+						img(src=img+"Mask Group (5).png", alt="")
+						.blog__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+				a(href="product_popkorn.html") view all<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.8103 0L14.77 1.34461L19.1837 7.04926H0V8.95092H19.1835L14.77 14.6554L15.8103 16L22 8L15.8103 0Z" fill="#C90C0F"/></svg>
+		include blocks/footer.pug
+		include blocks/scripts.pug

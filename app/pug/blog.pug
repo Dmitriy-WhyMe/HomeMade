@@ -1,0 +1,42 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+			section.blog
+				.container 
+					h2.blog__title Blog
+					.flex 
+						.flex__item 
+							img(src=img+"Mask Group (8).png", alt="")
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard
+							a(href="article.html") Read More
+						.flex__item 
+							img(src=img+"Mask Group (9).png", alt="")
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard
+							a(href="article.html") Read More
+						.flex__item 
+							img(src=img+"Mask Group (10).png", alt="")
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard
+							a(href="article.html") Read More
+						.flex__item 
+							img(src=img+"Mask Group (8).png", alt="")
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard
+							a(href="article.html") Read More
+						.flex__item 
+							img(src=img+"Mask Group (9).png", alt="")
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard
+							a(href="article.html") Read More
+						.flex__item 
+							img(src=img+"Mask Group (10).png", alt="")
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard
+							a(href="article.html") Read More
+				
+				
+		include blocks/footer.pug
+		include blocks/scripts.pug

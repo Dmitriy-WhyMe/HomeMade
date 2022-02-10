@@ -1,0 +1,551 @@
+// main page elements
+body
+	font-size: 14px
+	color: #1E1E1E
+	font-family: 'Poppins', sans-serif
+	font-weight: 400
+	background: white
+	overflow-x: hidden
+	// +scrollbar(10px, auto, $yellow, $gray2, $dark, null)
+
+.page-container
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+
+.container
+	max-width: 1170px
+	width: 100%
+	padding: 0
+	margin: 0 auto
+	position: relative
+	+mq($max-width: 1200px)
+		padding: 0 15px
+		max-width: 100%
+	+mq($max-width: 575px)
+		padding: 0 10px
+
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	width: 100%
+	background: $main
+	color: white
+.flex
+	display: flex
+.swiper__container
+	margin-top: -2px
+.swiper-slide
+	img
+		width: 100%
+		height: auto
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+	content: none
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after
+	content: none
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled
+	opacity: 1
+.swiper-button-prev, .swiper-rtl .swiper-button-next
+	left: 115px
+	+mq($max-width: 768px)
+		left: 5vw
+.swiper-button-next, .swiper-rtl .swiper-button-prev
+	right: 115px
+	+mq($max-width: 768px)
+		right: 5vw
+.products
+	padding-top: 60px
+	+mq($max-width: 767px)
+		padding-top: 20px
+	h2
+		font-weight: bold
+		font-size: 32px
+		line-height: 48px
+		text-transform: uppercase
+		text-align: center
+		color: $main
+		margin-bottom: 30px
+		+mq($max-width: 767px)
+			margin-bottom: 20px
+	.products__flex 
+		display: flex
+		justify-content: space-between
+		+mq($max-width: 1024px)
+			gap: 45px
+		+mq($max-width: 767px)
+			gap: 10px
+			flex-direction: column
+		.products__item
+			img
+				margin-bottom: 20px
+				max-width: 360px
+				width: 100%
+				+mq($max-width: 767px)
+					max-width: 100%
+			h3
+				font-weight: 600
+				font-size: 18px
+				line-height: 20px
+				text-align: center
+	a
+		margin-top: 20px
+		display: flex
+		color: $main
+		align-items: center
+		gap: 10px
+		font-weight: bold
+		font-size: 16px
+		line-height: 20px
+		text-transform: uppercase
+		display: flex
+		justify-content: end
+.blog
+	padding-top: 60px
+	+mq($max-width: 767px)
+		padding-top: 20px
+	h2
+		font-weight: bold
+		font-size: 32px
+		line-height: 48px
+		text-transform: uppercase
+		text-align: center
+		color: $main
+		margin-bottom: 30px
+		+mq($max-width: 767px)
+			margin-bottom: 20px
+	a
+		margin-top: 20px
+		display: flex
+		color: $main
+		align-items: center
+		gap: 10px
+		font-weight: bold
+		font-size: 16px
+		line-height: 20px
+		text-transform: uppercase
+		display: flex
+		justify-content: end
+	.blog__flex 
+		display: flex
+		justify-content: space-between
+		+mq($max-width: 1024px)
+			gap: 45px
+		+mq($max-width: 767px)
+			gap: 10px
+			flex-direction: column
+		.blog__item
+			max-width: 360px
+			+mq($max-width: 767px)
+				max-width: 100%
+			img
+				max-width: 360px
+				width: 100%
+				+mq($max-width: 767px)
+					max-width: 100%
+			.blog__text
+				margin-top: -6px
+				background: $main
+				padding: 10px 20px
+				font-weight: 500
+				color: white
+				text-align: center
+				font-size: 14px
+				line-height: 20px
+
+
+//page product
+.product
+	padding-top: 60px
+	+mq($max-width: 767px)
+		padding-top: 20px
+	h2
+		text-align: center
+		font-weight: bold
+		font-size: 32px
+		line-height: 48px
+		text-transform: uppercase
+		margin-bottom: 30px
+		+mq($max-width: 767px)
+			margin-bottom: 20px
+	.product__block
+		background: $main
+		position: relative
+		.product__absolute
+			width: 100%
+			height: 100%
+			position: absolute
+			+mq($max-width: 767px)
+				display: none
+		.container
+			padding: 60px 0
+			gap: 40px
+			flex-wrap: wrap
+			+mq($max-width: 1024px)
+				justify-content: center
+			.product__item 
+				display: flex
+				align-items: center
+				justify-content: center
+				flex-direction: column
+				background: white
+				padding: 21px 10px
+				img
+					max-width: 242px
+					width: 100%
+				h3
+					font-weight: 600
+					font-size: 14px
+					line-height: 18px
+					margin-bottom: 5px
+					max-width: 140px
+					width: 100%
+					text-align: center
+				.btn
+					color: white
+					max-width: 108px
+					height: 28px
+					font-weight: 600
+					text-transform: uppercase
+					font-size: 10px
+					line-height: 18px
+//page product-card
+.product-card
+	.container
+		padding: 60px 0
+		+mq($max-width: 768px)
+			padding: 60px
+		+mq($max-width: 767px)
+			padding: 15px
+.product-card
+	background: $main
+	position: relative
+	&__absolute
+		width: 100%
+		height: 100%
+		position: absolute
+	&__block
+		background: white
+		+mq($max-width: 768px)
+			flex-direction: column
+		img
+			max-width: 680px
+			width: 100%
+			+mq($max-width: 768px)
+				max-width: 100%
+		.product-card__text
+			padding-left: 39px
+			padding-right: 27px
+			padding-top: 40px
+			padding-bottom: 40px
+			+mq($max-width: 768px)
+				padding-right: 39px
+			+mq($max-width: 767px)
+				padding: 20px
+			h3
+				font-weight: 600
+				font-size: 22px
+				line-height: 20px
+				text-transform: uppercase
+				margin-bottom: 20px
+				+mq($max-width: 767px)
+					margin-bottom: 10px
+			h4
+				font-weight: 600
+				font-size: 18px
+				line-height: 24px
+				text-transform: uppercase
+				margin-bottom: 6px
+			.line
+				width: 100%
+				background: $main
+				height: 5px
+				margin-bottom: 20px
+			p
+				font-weight: normal
+				font-size: 14px
+				line-height: 20px
+				max-width: 306px
+				width: 100%
+				+mq($max-width: 768px)
+					max-width: 100%
+
+.product-card__related
+	padding-top: 60px
+	+mq($max-width: 767px)
+		padding-top: 20px
+	h2
+		text-align: center
+		font-weight: bold
+		font-size: 32px
+		line-height: 48px
+		margin-bottom: 30px
+		text-transform: uppercase
+		+mq($max-width: 767px)
+			margin-bottom: 20px
+	.flex
+		justify-content: center
+		gap: 40px
+		flex-wrap: wrap
+		+mq($max-width: 767px)
+			gap: 20px
+		.flex__item
+			padding: 21px 10px
+			border: 2px solid #C90C0F
+			max-width: 262px
+			width: 100%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			img
+				max-width: 242px
+				width: 100%
+			h3
+				max-width: 131px
+				width: 100%
+				text-align: center
+				margin-bottom: 5px
+				font-weight: 600
+				font-size: 14px
+				line-height: 18px
+			.btn
+				color: white
+				max-width: 108px
+				height: 28px
+				font-weight: 600
+				text-transform: uppercase
+				font-size: 10px
+				line-height: 18px
+
+
+//page about
+.about
+	padding-top: 60px
+	margin-bottom: 60px
+	+mq($max-width: 767px)
+		padding-top: 20px
+		margin-bottom: 20px
+	h2
+		font-weight: bold
+		font-size: 32px
+		line-height: 48px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px
+		+mq($max-width: 767px)
+			margin-bottom: 20px
+	img
+		max-width: 100%
+		width: 100%
+	p
+		margin: 0 auto
+		margin-top: 25px
+		font-size: 18px
+		line-height: 27px
+		max-width: 840px 
+		width: 100%
+		+mq($max-width: 768px)
+			padding: 0 15px
+
+.staff
+	h2
+		font-weight: bold
+		font-size: 32px
+		line-height: 48px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px
+	.flex
+		flex-wrap: wrap
+		gap: 75px
+		justify-content: center
+		+mq($max-width: 767px)
+			gap: 20px
+		.flex__item 
+			max-width: 300px
+			width: 100%
+			img
+				margin-bottom: 20px
+			h3
+				font-weight: 600
+				font-size: 20px
+				line-height: 20px
+				color: $main
+			p
+				font-weight: normal
+				font-size: 14px
+				line-height: 20px
+//page blog
+.blog
+	padding-top: 60px
+	+mq($max-width: 767px)
+		padding-top: 20px
+	.blog__title
+		color: black
+		font-weight: bold
+		font-size: 32px
+		line-height: 48px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px
+		+mq($max-width: 767px)
+			margin-bottom: 20px
+	.flex
+		grid-row-gap: 30px
+		grid-column-gap: 75px
+		flex-wrap: wrap
+		justify-content: center
+		+mq($max-width: 768px)
+			gap: 20px
+		.flex__item
+			max-width: 340px
+			width: 100%
+			p
+				font-weight: 500
+				font-size: 14px
+				line-height: 20px
+				background: #E0E0E0
+				padding: 20px 14px
+				margin-top: -6px
+			a
+				font-weight: bold
+				font-size: 14px
+				line-height: 20px
+				color: $main
+				text-transform: uppercase
+				justify-content: end
+				display: flex
+//page article
+.article
+	max-width: 800px
+	width: 100%
+	margin: 0 auto
+	padding-top: 60px
+	+mq($max-width: 767px)
+		padding: 0 15px
+		padding-top: 20px
+	h2
+		color: black
+		font-weight: bold
+		font-size: 32px
+		line-height: 48px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px
+		+mq($max-width: 767px)
+			margin-bottom: 20px
+	img
+		margin-bottom: 20px
+		max-width: 800px
+		width: 100%
+	p
+		font-size: 18px
+		line-height: 27px
+		font-weight: normal
+//page about
+.about
+	padding-top: 60px
+	+mq($max-width: 767px)
+		padding-top: 20px 
+	h2
+		color: black
+		font-weight: bold
+		font-size: 32px
+		line-height: 48px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px
+		+mq($max-width: 767px)
+			margin-bottom: 20px
+	.about__block
+		display: flex
+		background: #F3F3F3
+		padding: 30px 53px
+		gap: 104px
+		margin-bottom: 30px
+		+mq($max-width: 768px)
+			flex-direction: column
+			gap: 20px
+		+mq($max-width: 767px)
+			padding: 15px
+		.about__contact 
+			display: flex
+			flex-direction: column
+			gap: 40px
+			a
+				display: flex
+				align-items: center
+				gap: 23px
+				color: black
+				font-weight: 500
+				font-size: 20px
+				line-height: 20px
+				+mq($max-width: 767px)
+					font-size: 18px
+		form
+			display: flex
+			flex-direction: column
+			max-width: 477px
+			width: 100%
+			+mq($max-width: 768px)
+				max-width: 100%
+			label
+				font-weight: 500
+				font-family: Poppins
+				font-style: normal
+				font-size: 16px
+				line-height: 24px
+				color: #3E3E3E
+				margin-bottom: 10px
+				margin-top: 10px
+			textarea
+				resize: none
+				background: inherit
+				border: 1.5px solid #E0E0E0
+				padding: 10px
+				font-weight: 500
+				font-family: Poppins
+				font-style: normal
+				font-size: 16px
+				line-height: 24px
+				color: #3E3E3E
+				min-height: 120px
+				height: 100%
+				margin-bottom: 20px
+				+mq($max-width: 768px)
+					max-width: 100%
+			button
+				display: flex
+				justify-content: end
+				font-family: Poppins
+				font-style: normal
+				font-weight: 500
+				font-size: 16px
+				line-height: 24px
+				cursor: pointer
+				color: #3E3E3E
+			input
+				border: none
+				background: inherit
+				font-weight: 500
+				font-family: Poppins
+				font-style: normal
+				font-size: 16px
+				line-height: 24px
+				color: #3E3E3E
+				width: 100%
+				max-width: 100%
+				padding-bottom: 10px
+				padding-top: 10px
+				margin-bottom: 10px
+				border-bottom: 1.5px solid #E0E0E0
+				&::placeholder
+					font-family: Poppins
+					font-style: normal
+					font-weight: 500
+					font-size: 16px
+					line-height: 24px
+					color: #3E3E3E
