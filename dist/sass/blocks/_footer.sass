@@ -1,0 +1,38 @@
+footer
+    margin-top: 60px
+    background: #E0E0E0
+    padding: 33px 0
+    +mq($max-width: 767px)
+        margin-top: 20px
+    .container
+        justify-content: space-between
+        +mq($max-width: 767px)
+            flex-direction: column
+            gap: 10px
+        .footer__item-one
+            display: flex
+            flex-direction: column
+            gap: 20px
+        .footer__item-two
+            margin-left: 130px  
+            +mq($max-width: 768px)
+                margin-left: 0
+        .footer__item
+            a
+                color: black
+                display: flex
+                align-items: center
+                gap: 23px
+                font-weight: 500
+                font-size: 18px
+                line-height: 20px
+            h4
+                font-weight: bold
+                font-size: 18px
+                line-height: 20px
+                margin-bottom: 14px
+            p
+                margin-bottom: 11px
+                font-weight: 500
+                font-size: 18px
+                line-height: 20px

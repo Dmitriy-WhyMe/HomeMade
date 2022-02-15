@@ -1,0 +1,41 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+			section.product
+				h2 Popcorn 
+				.product__block
+					img(src=img+"popkorn.png", alt="", class="product__absolute")
+					.container(class="flex")
+						.product__item 
+							img(src=img+"1 (1).png", alt="")
+							h3 Popcorn with berries
+							a.btn(href="#") View Product
+						.product__item 
+							img(src=img+"4 (1).png", alt="")
+							h3 Popcorn with berries
+							a.btn(href="#") View Product
+						.product__item 
+							img(src=img+"3 (1).png", alt="")
+							h3 Popcorn with berries
+							a.btn(href="#") View Product
+						.product__item 
+							img(src=img+"2 (1).png", alt="")
+							h3 Popcorn with berries
+							a.btn(href="#") View Product
+						.product__item 
+							img(src=img+"5 (1).png", alt="")
+							h3 Popcorn with berries
+							a.btn(href="#") View Product
+						.product__item 
+							img(src=img+"6(1).png", alt="")
+							h3 Popcorn with berries
+							a.btn(href="#") View Product
+		include blocks/footer.pug
+		include blocks/scripts.pug
